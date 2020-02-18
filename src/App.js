@@ -4,33 +4,38 @@ import { Link } from 'react-router';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
+
+const InputFrom = (props) => {
+  return (
+    <div className="InputFrom">
+      <div class="col mt-4 pt-4">
+        <label for="exampleInputEmail1">{props.inputname}</label>
+        <input type={props.inputtype} class="form-control" id={props.inputid} placeholder={props.textinplaceholder} />
+      </div>
+    </div>
+  )
+}
+
+
 function App() {
   const [dateNum, setDasteNum] = useState(0);
 
   return (
     <div>
-          <Header firsttitle={"ยินดีต้อนรับ"} secondtitle={"เริ่มสร้างแผนการท่องเที่ยว"}></Header>
+      <Header firsttitle={"ยินดีต้อนรับ"} secondtitle={"เริ่มสร้างแผนการท่องเที่ยว"}></Header>
       <div class="container">
         <form>
           <div class="form-group">
-            <div class="col mt-4 pt-5">
-              <label for="exampleInputEmail1">ชื่อทริป</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ใส่ชื่อทริปท่องเที่ยว" />
-            </div>
-            <div class="col mt-4 pt-4">
-              <label for="exampleInputEmail1">จังหวัด</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ใส่ชื่อจังหวัดที่ต้องการเดินทาง" />
-            </div>
-            <div class="col mt-4 pt-4">
-              <label for="example-date-input" class="col-form-label">วันที่เริ่มเดินทาง</label>
-              <input class="form-control" type="date" id="example-date-input" placeholder="mm-dd-yyyy" />
-            </div>
+
+            <InputFrom inputname="ชื่อทริป" inputtype="email" inputid="exampleInputEmail1" textinplaceholder="ใส่ชื่อทริปท่องเที่ยว"></InputFrom>
+            <InputFrom inputname="จังหวัด" inputtype="email" inputid="exampleInputEmail1" textinplaceholder="ใส่ชื่อจังหวัดที่ต้องการเดินทาง"></InputFrom>   
+            <InputFrom inputname="วันที่เริ่มเดินทาง" inputtype="date" inputid="example-date-input" textinplaceholder="mm-dd-yyyy"></InputFrom>           
+
           </div>
         </form>
 
-
         <div class="col mt-4 pt-4">
-          <label for="example-date-input" class="col-center-label">จำนวนวัน</label>
+          <label for="example-date-input">จำนวนวัน</label>
           <div class="input-group">
 
             <span class="input-group-btn">
@@ -38,18 +43,16 @@ function App() {
                 <span class="glyphicon glyphicon-minus"></span>
               </button>
             </span>
-
             <input type="text" name="quant[1]" class="form-control input-number" value={dateNum} min="1" max="10" />
-
             <span class="input-group-btn">
               <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1] " onClick={() => { setDasteNum(dateNum + 1) }}>
                 <span class="glyphicon glyphicon-plus"></span>
               </button>
             </span>
+
           </div>
         </div>
       </div>
-
       <Link to="/AddTrip" >
         <Footer footertext={"ต่อไป"}></Footer>
       </Link>
