@@ -2,20 +2,10 @@ import React, { useState } from 'react';
 import Logo from './logojourney.png';
 import { Link } from 'react-router';
 import Header from './Components/Header';
-
-
-
+import Footer from './Components/Footer';
 
 function App() {
   const [dateNum, setDasteNum] = useState(0);
-
-  const footer = {
-    position: "fixed",
-    color: "white",
-    width: "100%",
-    left: "0",
-    bottom: "0",
-  }
 
   return (
     <div>
@@ -59,12 +49,9 @@ function App() {
           </div>
         </div>
       </div>
+
       <Link to="/AddTrip" >
-        <footer class="bg-warning text-white" style={footer}>
-          <div class="text-center py-3">
-            <h4> ต่อไป</h4>
-          </div>
-        </footer>
+        <Footer footertext={"ต่อไป"}></Footer>
       </Link>
     </div>
   )

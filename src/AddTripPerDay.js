@@ -3,18 +3,9 @@ import App from './App';
 import { Link } from 'react-router';
 import Logo from './logojourney.png';
 import Header from './Components/Header';
-
-
+import Footer from './Components/Footer';
 
 function AddTripPerDay() {
-
-  const footer = {
-    position: "fixed",
-    color: "white",
-    width: "100%",
-    left: "0",
-    bottom: "0",
-  }
 
 
   return (
@@ -46,11 +37,7 @@ function AddTripPerDay() {
         </form>
       </div>
       <Link to="/CheckPlan" >
-        <footer class="bg-warning text-white" style={footer}>
-          <div class="text-center py-3">
-            <h4>ไปลุยกันเลย !</h4>
-          </div>
-        </footer>
+        <Footer footertext={"ไปลุยกันเลย !"}></Footer>
       </Link>
     </div>
   )

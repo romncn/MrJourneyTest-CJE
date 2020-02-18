@@ -3,8 +3,7 @@ import App from './App';
 import { Link } from 'react-router';
 import Logo from './logojourney.png';
 import Header from './Components/Header';
-
-
+import Footer from './Components/Footer';
 
 
 function CreateBill() {
@@ -49,11 +48,7 @@ function CreateBill() {
             </div>
 
             <Link to="/CreateBill" >
-                <footer class="bg-warning text-white" style={footer}>
-                    <div class="text-center py-3">
-                        <h4>สร้างรายการเก็บเงิน</h4>
-                    </div>
-                </footer>
+            <Footer footertext={"สร้างรายการเก็บเงิน"}></Footer>
             </Link>
 
         </div>

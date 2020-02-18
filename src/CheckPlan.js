@@ -3,7 +3,7 @@ import App from './App';
 import { Link } from 'react-router';
 import Logo from './logojourney.png';
 import Header from './Components/Header';
-
+import Footer from './Components/Footer';
 
 
 function CheckPlan() {
@@ -131,8 +131,6 @@ function CheckPlan() {
 
                         <div className='mb-4'>
                             <div className='container p-0'>
-                                {/* <div className='col-12 mb-4'>
-                            <div className='row p-0'> */}
                                 <div className='d-inline-block'>
                                     <button type="button" class="btn btn-warning btn-number">
                                         <span class="glyphicon glyphicon-plus"></span>
@@ -147,11 +145,7 @@ function CheckPlan() {
             </form>
 
             <Link to="/AddTrip" >
-                <footer class="bg-warning text-white" style={footer}>
-                    <div class="text-center py-3">
-                        <h4>กลับสู่ห้องแชท</h4>
-                    </div>
-                </footer>
+            <Footer footertext={"กลับสู่ห้องแชท"}></Footer>
             </Link>
         </div>
     )

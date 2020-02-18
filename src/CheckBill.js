@@ -2,19 +2,11 @@ import React from 'react';
 import { Link } from 'react-router';
 import Logo from './logojourney.png';
 import Header from './Components/Header';
-
-
+import Footer from './Components/Footer';
 
 
 function CheckBill() {
 
-    const footer = {
-        position: "fixed",
-        color: "white",
-        width: "100%",
-        left: "0",
-        bottom: "0",
-    }
     return (
         <div>
             <Header firsttitle={"รายการเรียกเก็บเงิน"} secondtitle={"มาจ่ายเงินที่ค้างไว้กันเถอะะ !!"}></Header>
@@ -52,11 +44,7 @@ function CheckBill() {
             </div>
 
             <Link to="/CheckBill" >
-                <footer class="bg-warning text-white" style={footer}>
-                    <div class="text-center py-3">
-                        <h4>กลับสู่ห้องแชท</h4>
-                    </div>
-                </footer>
+            <Footer footertext={"กลับสู่ห้องแชท"}></Footer>
             </Link>
 
         </div>
