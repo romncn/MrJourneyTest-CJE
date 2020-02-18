@@ -1,22 +1,21 @@
 import React from 'react';
 import Logo from '../logojourney.png';
 
-function Header() {
-    const imglogo = {
-        width: "55%",
-    }
+const Header = (props) => {
 
 
     return (
-        <div className='row'>
-            <div className='col-8'>
-                <p> ยินดีต้อนรับ </p>
-                <h4> เริ่มสร้างแผนการท่องเที่ยวว </h4>
+        <div className='Header'>
+            <nav className="navbar navbar-light p-0 pt-3 pb-3 bg-warning text-white">
+                <div className="container">
+                    <div>
+                        <p className='m-0'>{props.firsttitle}</p>
+                        <h4>{props.secondtitle}</h4>
+                    </div>
+                    <img src={Logo} height="80px" className="d-inline-block align-top" />
+                </div>
+            </nav>
 
-            </div>
-            <div  className='col-4'>
-                <img src={Logo} style={imglogo} />
-            </div>
         </div>
     )
 }

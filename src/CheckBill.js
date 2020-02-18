@@ -1,7 +1,7 @@
 import React from 'react';
-import App from './App';
 import { Link } from 'react-router';
 import Logo from './logojourney.png';
+import Header from './Components/Header';
 
 
 
@@ -15,44 +15,9 @@ function CheckBill() {
         left: "0",
         bottom: "0",
     }
-    const toplogo = {
-        width: "70%"
-    }
-    const toplogo2 = {
-        width: "30%"
-    }
-    const imglogo = {
-        width: "90%",
-    }
-
-
-
     return (
         <div>
-            <nav className="navbar navbar-light p-0 pt-3 pb-3 bg-warning text-white">
-                <div className="container">
-                    <div>
-                        <p className='m-0'>รายการเรียกเก็บเงิน</p>
-                        <h4>มาจ่ายเงินที่ค้างไว้กันเถอะะ !!</h4>
-                    </div>
-                    <img src={Logo} height="80px" className="d-inline-block align-top ml-4" />
-                </div>
-            </nav>
-            {/* <div class="p-0 m-0 bg-warning text-white">
-                <div class="container">
-                    <div class="row">
-                        <span class="col-8 pt-4 text-left">
-                            <p>รายการเรียกเก็บเงิน</p>
-                            <h4>มาจ่ายเงินที่ค้างไว้กันเถอะะ !! </h4>
-                        </span>
-                        <span class="col-4 pb-2 pt-2 text-right" >
-                            <img src={Logo} style={imglogo} />
-                        </span>
-                    </div>
-                </div>
-            </div> */}
-
-
+            <Header firsttitle={"รายการเรียกเก็บเงิน"} secondtitle={"มาจ่ายเงินที่ค้างไว้กันเถอะะ !!"}></Header>
             <div class="container">
                 <form>
                     <div class="form-group">

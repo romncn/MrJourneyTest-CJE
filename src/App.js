@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Logo from './logojourney.png';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+import Header from './Components/Header';
 
 
 
@@ -16,39 +17,9 @@ function App() {
     bottom: "0",
   }
 
-  const imglogo = {
-    width: "90%",
-  }
-
-
-
   return (
     <div>
-      <nav className="navbar navbar-light p-0 pt-3 pb-3 bg-warning text-white">
-        <div className="container">
-          <div>
-            <p className='m-0'> ยินดีต้อนรับ </p>
-            <h4> เริ่มสร้างแผนการท่องเที่ยวว </h4>
-          </div>
-          <img src={Logo} height="80px" className="d-inline-block align-top" />
-        </div>
-      </nav>
-
-
-      {/* <div class="p-0 m-0 bg-warning text-white">
-        <div class="container">
-          <div class="row">
-            <span class="col-8 pt-4 text-left">
-              <p> ยินดีต้อนรับ </p>
-              <h4> เริ่มสร้างแผนการท่องเที่ยวว </h4>
-            </span>
-            <span class="col-4 pb-2 pt-2 text-right" >
-              <img src={Logo} style={imglogo} />
-            </span>
-          </div>
-        </div>
-      </div> */}
-
+          <Header firsttitle={"ยินดีต้อนรับ"} secondtitle={"เริ่มสร้างแผนการท่องเที่ยว"}></Header>
       <div class="container">
         <form>
           <div class="form-group">
