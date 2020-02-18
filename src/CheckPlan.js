@@ -8,14 +8,6 @@ import Footer from './Components/Footer';
 
 function CheckPlan() {
 
-    const footer = {
-        position: "fixed",
-        color: "white",
-        width: "100%",
-        left: "0",
-        bottom: "0",
-    }
-
 
     return (
         <div>

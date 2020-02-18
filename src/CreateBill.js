@@ -8,14 +8,6 @@ import Footer from './Components/Footer';
 
 function CreateBill() {
 
-    const footer = {
-        position: "fixed",
-        color: "white",
-        width: "100%",
-        left: "0",
-        bottom: "0",
-    }
-
 
     return (
         <div>
@@ -24,16 +16,21 @@ function CreateBill() {
                 <form>
                     <div class="form-group">
                         <div class="col mt-4 pt-4">
+                            <center><label for="exampleInputEmail1">เลขบัญชีธนาคาร/พร้อมเพย์ของผู้สร้าง</label></center>
+                            <input type="number" class="form-control" id="example-input-number" placeholder="กรอกเลขบัญชีหรือรหัสพร้อมเพย์" />
+                        </div>
+
+                        <div class="col mt-4 pt-4">
                             <label for="exampleInputEmail1">ชื่อคนที่ 1</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อผู้ที่ต้องการเก็บเงิน" />
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ชื่อผู้ที่ต้องการเก็บเงิน" />
                             <p></p>  <label for="exampleInputEmail1">จำนวนเงิน</label>
-                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="จำนวนเงิน(TH)" />
+                            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนเงิน(TH)" />
                         </div>
                         <div class="col mt-4 pt-4">
                             <label for="exampleInputEmail1">ชื่อคนที่ 2</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อผู้ที่ต้องการเก็บเงิน" />
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ชื่อผู้ที่ต้องการเก็บเงิน" />
                             <p></p>  <label for="exampleInputEmail1">จำนวนเงิน</label>
-                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="จำนวนเงิน(TH)" />
+                            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนเงิน(TH)" />
                         </div>
 
                         <div class="container mt-4 pt-4 text-center">
@@ -48,7 +45,7 @@ function CreateBill() {
             </div>
 
             <Link to="/CreateBill" >
-            <Footer footertext={"สร้างรายการเก็บเงิน"}></Footer>
+                <Footer footertext={"สร้างรายการเก็บเงิน"}></Footer>
             </Link>
 
         </div>
