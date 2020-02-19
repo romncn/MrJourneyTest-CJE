@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import Logo from './logojourney.png';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import './css/App.css';
 
 
 function CheckPlan() {
@@ -34,9 +35,9 @@ function CheckPlan() {
                                 </div>
                                 {/* <div class="col-4 text-right"> */}
                                 <div className='d-inline-block pl-2'>
-                                    <button type="button" class="btn btn-success p-0 " style={{ borderRadius: '20px', width: "36px", height: "35px", textalign: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-success p-0 ">
                                         <span class="glyphicon glyphicon-road"></span></button>
-                                    <button type="button" class="btn btn-danger ml-1 p-0 " style={{ borderRadius: '20px', width: "35px", height: "35px", textalign: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-danger ml-1 p-0 ">
                                         <span class="glyphicon glyphicon-trash"></span></button>
                                 </div>
                             </div>
@@ -50,9 +51,9 @@ function CheckPlan() {
                                     <button type="button" class="btn btn-default ml-2">08:00-09:00</button>
                                 </div>
                                 <div className='d-inline-block pl-2'>
-                                    <button type="button" class="btn btn-success p-0" style={{ borderRadius: '20px', width: "36px", height: "35px", textalign: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-success p-0">
                                         <span class="glyphicon glyphicon-cutlery"></span></button>
-                                    <button type="button" class="btn btn-danger ml-2 p-0" style={{ borderRadius: '20px', width: "35px", height: "35px", textalign: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-danger ml-2 p-0">
                                         <span class="glyphicon glyphicon-trash"></span></button>
                                 </div>
                             </div>
@@ -66,9 +67,9 @@ function CheckPlan() {
                                     <button type="button" class="btn btn-warning ml-2">09:30-11:30</button>
                                 </div>
                                 <div className='d-inline-block pl-2'>
-                                    <button type="button" class="btn btn-success p-0" style={{ borderRadius: '20px', width: "36px", height: "35px", textAlign: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-success p-0">
                                         <span class="glyphicon glyphicon-road"></span></button>
-                                    <button type="button" class="btn btn-danger ml-2 p-0" style={{ borderRadius: '20px', width: "35px", height: "35px", alignmiddle: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-danger ml-2 p-0">
                                         <span class="glyphicon glyphicon-trash"></span></button>
                                 </div>
                             </div>
@@ -82,9 +83,9 @@ function CheckPlan() {
                                     <button type="button" class="btn btn-default ml-2 ">12:00-14:30</button>
                                 </div>
                                 <div className='d-inline-block pl-2'>
-                                    <button type="button" class="btn btn-success p-0" style={{ borderRadius: '20px', width: "36px", height: "35px", textalign: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-success p-0">
                                         <span class="glyphicon glyphicon-home"></span></button>
-                                    <button type="button" class="btn btn-danger ml-2 p-0" style={{ borderRadius: '20px', width: "35px", height: "35px", textalign: "center" }}>
+                                    <button type="button" class="event-trip-button btn btn-danger ml-2">
                                         <span class="glyphicon glyphicon-trash"></span></button>
                                 </div>
                             </div>
@@ -115,8 +116,10 @@ function CheckPlan() {
                                     <button type="button" class="btn btn-warning ml-2">09:30-11:30</button>
                                 </div>
                                 <div className='d-inline-block pl-2'>
-                                    <button type="button" class="btn btn-success p-0" style={{ borderRadius: '20px', width: "36px", height: "35px", textAlign: "center" }}><i class="glyphicon glyphicon-road"></i></button>
-                                    <button type="button" class="btn btn-danger ml-2 p-0" style={{ borderRadius: '20px', width: "35px", height: "35px", alignmiddle: "center" }}><i class="glyphicon glyphicon-trash"></i></button>
+                                    <button type="button" class="event-trip-button btn btn-success p-0" >
+                                        <span class="glyphicon glyphicon-road"></span></button>
+                                    <button type="button" class="event-trip-button btn btn-danger ml-2 p-0">
+                                        <span class="glyphicon glyphicon-trash"></span></button>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +140,7 @@ function CheckPlan() {
             </form>
 
             <Link to="/AddTrip" >
-            <Footer footertext={"กลับสู่ห้องแชท"}></Footer>
+                <Footer footertext={"กลับสู่ห้องแชท"}></Footer>
             </Link>
         </div>
     )

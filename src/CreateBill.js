@@ -19,7 +19,6 @@ function CreateBill() {
                             <center><label for="exampleInputEmail1">เลขบัญชีธนาคาร/พร้อมเพย์ของผู้สร้าง</label></center>
                             <input type="number" class="form-control" id="example-input-number" placeholder="กรอกเลขบัญชีหรือรหัสพร้อมเพย์" />
                         </div>
-
                         <div class="col mt-4 pt-4">
                             <label for="exampleInputEmail1">ชื่อคนที่ 1</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ชื่อผู้ที่ต้องการเก็บเงิน" />
