@@ -36,9 +36,12 @@ function AddTripPerDay() {
           </div>
         </form>
       </div>
-      <Link to="/CheckPlan" >
+      {/* <Link to="/CheckPlan" >
         <Footer footertext={"ไปลุยกันเลย !"}></Footer>
-      </Link>
+      </Link> */}
+      <Footer footertext={"ไปลุยกันเลย !"} footerlink={"/CheckPlan"}>
+      </Footer>
+
     </div>
   )
 }

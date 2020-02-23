@@ -49,10 +49,13 @@ function CheckBill() {
                     </div>
                 </form>
             </div>
-
+            {/* 
             <Link to="/CheckBill" >
                 <Footer footertext={"กลับสู่ห้องแชท"}></Footer>
-            </Link>
+            </Link> */}
+                        <Footer footertext={"กลับสู่ห้องแชท"} footerlink={"line://ti/p/@732lqacw"}>
+
+            </Footer>
 
         </div>
     )

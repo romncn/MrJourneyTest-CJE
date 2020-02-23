@@ -28,8 +28,8 @@ function App() {
           <div class="form-group">
 
             <InputFrom inputname="ชื่อทริป" inputtype="email" inputid="exampleInputEmail1" textinplaceholder="ใส่ชื่อทริปท่องเที่ยว"></InputFrom>
-            <InputFrom inputname="จังหวัด" inputtype="email" inputid="exampleInputEmail1" textinplaceholder="ใส่ชื่อจังหวัดที่ต้องการเดินทาง"></InputFrom>   
-            <InputFrom inputname="วันที่เริ่มเดินทาง" inputtype="date" inputid="example-date-input" textinplaceholder="mm-dd-yyyy"></InputFrom>           
+            <InputFrom inputname="จังหวัด" inputtype="email" inputid="exampleInputEmail1" textinplaceholder="ใส่ชื่อจังหวัดที่ต้องการเดินทาง"></InputFrom>
+            <InputFrom inputname="วันที่เริ่มเดินทาง" inputtype="date" inputid="example-date-input" textinplaceholder="mm-dd-yyyy"></InputFrom>
 
           </div>
         </form>
@@ -53,9 +53,11 @@ function App() {
           </div>
         </div>
       </div>
-      <Link to="/AddTrip" >
+      {/* <Link to="/AddTrip" >
         <Footer footertext={"ต่อไป"}></Footer>
-      </Link>
+      </Link> */}
+      <Footer footertext={"ต่อไป"} footerlink={"/AddTrip"}>
+      </Footer>
     </div>
   )
 }

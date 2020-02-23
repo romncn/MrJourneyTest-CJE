@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import Logo from './logojourney.png';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import './css/App.css'
 
 
 function CreateBill() {
@@ -15,7 +16,7 @@ function CreateBill() {
             <div class="container">
                 <form>
                     <div class="form-group">
-                        <div class="col mt-4 pt-4">
+                        <div class="col pt-4">
                             <center><label for="exampleInputEmail1">เลขบัญชีธนาคาร/พร้อมเพย์ของผู้สร้าง</label></center>
                             <input type="number" class="form-control" id="example-input-number" placeholder="กรอกเลขบัญชีหรือรหัสพร้อมเพย์" />
                         </div>
@@ -31,8 +32,15 @@ function CreateBill() {
                             <p></p>  <label for="exampleInputEmail1">จำนวนเงิน</label>
                             <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนเงิน(TH)" />
                         </div>
+                        <div class="col mt-4 pt-4">
+                            <label for="exampleInputEmail1">ชื่อคนที่ 3</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ชื่อผู้ที่ต้องการเก็บเงิน" />
+                            <p></p>  <label for="exampleInputEmail1">จำนวนเงิน</label>
+                            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนเงิน(TH)" />
+                        </div>
 
-                        <div class="container mt-4 pt-4 text-center">
+
+                        <div class="container mt-4 pt-4 text-center pb-2">
                             <span class="input-group-btn" />
                             <button type="button" class="btn btn-warning btn-number" data-type="plus" data-field="quant[1] " >
                                 <span class="glyphicon glyphicon-plus"></span>
@@ -43,10 +51,11 @@ function CreateBill() {
                 </form>
             </div>
 
-            <Link to="/CreateBill" >
+            {/* <Link to="/CreateBill" >
                 <Footer footertext={"สร้างรายการเก็บเงิน"}></Footer>
-            </Link>
-
+            </Link> */}
+            <Footer footertext={"สร้างรายการเก็บเงิน"} footerlink={"line://ti/p/@732lqacw"}>
+            </Footer>
         </div>
     )
 }
