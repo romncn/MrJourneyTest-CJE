@@ -8,6 +8,7 @@ import CheckPlan from './CheckPlan';
 import CheckBill from './CheckBill';
 import CreateBill from './CreateBill';
 import Header from './Components/Header';
+// import FooterTest from './FooterTest';
 
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
             <Route path="/CreateBill" component={CreateBill}/>
             <Route path="/CheckBill" component={CheckBill}/>
             <Route path="/Header" component={Header}/>
+            {/* <Route path="/FooterTest" component={FooterTest}/> */}
 
 
 

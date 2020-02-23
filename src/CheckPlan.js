@@ -11,8 +11,8 @@ function CheckPlan() {
 
 
     return (
-        <div>
-            <Header firsttitle={"แผนการท่องเที่ยวทั้งหมด"} secondtitle={"วันที่ 14/02/2563-วันที่ 15/02/2563"}></Header>
+        <div className="flex-wrapper">
+            <Header firsttitle={"แผนการท่องเที่ยวทั้งหมด"} secondtitle={"วันที่ 14/02/2563-วันที่ 15/02/2563"}/>
             <div id="page-content">
                 <form>
                     <div class="form-group mt-5 pl-2 pr-2">

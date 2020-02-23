@@ -13,7 +13,7 @@ function CreateBill() {
     return (
         <div>
             <Header firsttitle={"รายการเรียกเก็บเงิน"} secondtitle={"เริ่มสร้างรายการเก็บเงินกัน !!"}></Header>
-            <div class="container">
+            <div class="container" id="page-content">
                 <form>
                     <div class="form-group">
                         <div class="col pt-4">
@@ -38,8 +38,7 @@ function CreateBill() {
                             <p></p>  <label for="exampleInputEmail1">จำนวนเงิน</label>
                             <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนเงิน(TH)" />
                         </div>
-
-
+                 
                         <div class="container mt-4 pt-4 text-center pb-2">
                             <span class="input-group-btn" />
                             <button type="button" class="btn btn-warning btn-number" data-type="plus" data-field="quant[1] " >
